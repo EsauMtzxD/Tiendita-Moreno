@@ -43,5 +43,15 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tiendita-Moreno.BussinessEntities\Tiendita-Moreno.BussinessEntities.csproj">
+      <Project>{e3eb7a53-8861-405c-a786-0a5e1a3bb9a1}</Project>
+      <Name>Tiendita-Moreno.BussinessEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tiendita-Moreno.DataAccessLayer\Tiendita-Moreno.DataAccessLayer.csproj">
+      <Project>{70a2467e-c587-440b-a7a4-a89e8681857d}</Project>
+      <Name>Tiendita-Moreno.DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
