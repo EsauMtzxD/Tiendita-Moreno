@@ -17,6 +17,22 @@ namespace Tiendita_Moreno.DesktopApp
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+
+            //int QuantityOfUsers = BussinessLogicLayer.UserBLL.CheckTheUsers();
+
+            //if (QuantityOfUsers == 0)
+            //{
+
+            //    Application.Run(new CreateUserFRM());
+
+            //}
+            //else
+            //{
+
+            //    Application.Run(new Login());
+
+            //}
+
         }
     }
 }

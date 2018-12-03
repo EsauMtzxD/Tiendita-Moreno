@@ -22,6 +22,7 @@ namespace Tiendita_Moreno.BussinessEntities
         public DbSet<DetailSale> DetailSales { get; set; }
         public DbSet<Sale> Sales { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

@@ -13,7 +13,7 @@ namespace Tiendita_Moreno.BussinessEntities.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201811081618201_Initial"; }
+            get { return "201811091608364_Initial"; }
         }
         
         string IMigrationMetadata.Source

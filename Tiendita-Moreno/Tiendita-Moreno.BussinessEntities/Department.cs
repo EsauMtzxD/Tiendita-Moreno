@@ -21,7 +21,7 @@ namespace Tiendita_Moreno.BussinessEntities
         /// </summary>
         [Required(ErrorMessage = "The field Name is required")]
         [StringLength(50, ErrorMessage = "The field Name must have max length of 50 Characteres")]
-        [DataType(DataType.Text, ErrorMessage = "Th field Name must be a string")]
+        [DataType(DataType.Text, ErrorMessage = "The field Name must be a string")]
         public string Name { get; set; }
 
         /// <summary>

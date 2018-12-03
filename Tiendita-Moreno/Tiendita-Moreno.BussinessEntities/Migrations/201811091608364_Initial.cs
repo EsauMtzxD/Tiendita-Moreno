@@ -73,6 +73,16 @@ namespace Tiendita_Moreno.BussinessEntities.Migrations
                     })
                 .PrimaryKey(t => t.Id);
             
+            CreateTable(
+                "dbo.User",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Uid = c.String(nullable: false, maxLength: 20, unicode: false, storeType: "nvarchar"),
+                        Pwd = c.String(nullable: false, maxLength: 20, unicode: false, storeType: "nvarchar"),
+                    })
+                .PrimaryKey(t => t.Id);
+            
         }
         
         public override void Down()
@@ -83,6 +93,7 @@ namespace Tiendita_Moreno.BussinessEntities.Migrations
             DropIndex("dbo.DetailSale", new[] { "SaleId" });
             DropIndex("dbo.DetailSale", new[] { "ProductId" });
             DropIndex("dbo.Product", new[] { "DepartmentId" });
+            DropTable("dbo.User");
             DropTable("dbo.Sale");
             DropTable("dbo.DetailSale");
             DropTable("dbo.Product");
